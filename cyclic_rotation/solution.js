@@ -97,7 +97,7 @@ const rotateAntiClockWise = (A, K) => {
   let n = A.length;
   K = K % n; // make sure K remain within the scope of the list
   //do no rotate if K is 0
-  if (K === 0) {
+  if (K == 0 || n == 0) {
     return A;
   }
   let cycles = gcd(n, K);
